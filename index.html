@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+h1 {
+  color: red;
+  font-family: sans-serif;
+  font-size: 400%;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <h1 id="timer">5</h1>
+<script id="jsbin-javascript">
+let timeRemaining = 5
+let timerElement  = document.getElementById('timer')
+
+function countdown() {
+  timeRemaining = timeRemaining - 1
+  if (timeRemaining <= 0) {
+    timerElement.innerText = "Time is up!"
+  } else {
+    timerElement.innerText = timeRemaining
+  }
+}
+
+setInterval(countdown, 1000);
+</script>
+
+
+<script id="jsbin-source-css" type="text/css">h1 {
+  color: red;
+  font-family: sans-serif;
+  font-size: 400%;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">let timeRemaining = 5
+let timerElement  = document.getElementById('timer')
+
+function countdown() {
+  timeRemaining = timeRemaining - 1
+  if (timeRemaining <= 0) {
+    timerElement.innerText = "Time is up!"
+  } else {
+    timerElement.innerText = timeRemaining
+  }
+}
+
+setInterval(countdown, 1000);</script></body>
+</html>
